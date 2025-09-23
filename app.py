@@ -1,13 +1,6 @@
 import streamlit as st
 import requests
 import json
-from datetime import datetime
-
-# Validate API key before running
-if "OPENROUTER_API_KEY" not in st.secrets:
-    st.error("❌ OpenRouter API key not found. Please add it to your secrets.toml file.")
-    st.stop()
-
 from datetime import datetime, timedelta
 import pytz
 
@@ -24,6 +17,11 @@ wib_time = utc_time.astimezone(wib_zone)
 
 print(f"UTC: {utc_time}")
 print(f"WIB: {wib_time}")
+
+# Validate API key before running
+if "OPENROUTER_API_KEY" not in st.secrets:
+    st.error("❌ OpenRouter API key not found. Please add it to your secrets.toml file.")
+    st.stop()
 
 def clean_response(content):
     """Clean up common markup tokens and formatting"""

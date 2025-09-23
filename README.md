@@ -78,6 +78,8 @@ fun_project_2_REAID/
 
 ## **Application Preview**
 ![Multichat](preview.png)
+![Multichat](process.png)
+![Multichat](error.png)
 
 ### **Tech Stack & Dependencies**
 *   **Language**: Python 3.7+
@@ -216,6 +218,9 @@ fun_project_2_REAID/
 
 ## **Preview Aplikasi**
 ![Multichat](preview.png)
+![Multichat](process.png)
+![Multichat](error.png)
+
 
 ### **Tech Stack & Dependencies**
 *   **Bahasa**: Python 3.7+

@@ -3,17 +3,17 @@ import requests
 import json
 from datetime import datetime
 
-# API status indicator
-if "OPENROUTER_API_KEY" in st.secrets:
-    st.success("✅ API Key: Configured")
-else:
-    st.error("❌ API Key: Missing")
+# Validate API key before running
+if "OPENROUTER_API_KEY" not in st.secrets:
+    st.error("❌ OpenRouter API key not found. Please add it to your secrets.toml file.")
+    st.stop()
 
 def clean_response(content):
     """Clean up common markup tokens and formatting"""
     if content:
         # Remove common AI artifacts and markup
-        content = content.replace('```', '').replace('**', '').replace('*', '').strip()
+        content = content.replace('
+', '').replace('**', '').replace('*', '').strip()
         content = content.replace('<s>', '').replace('</s>', '').strip()
         # Remove excessive newlines and clean up formatting
         content = '\n'.join([line.strip() for line in content.split('\n') if line.strip()])
@@ -155,8 +155,12 @@ with st.sidebar:
     st.header("⚙️ Configuration")
     
     # API status indicator
-    st.success("✅ API Key: Configured") if "OPENROUTER_API_KEY" in st.secrets else st.error("❌ API Key: Missing")
+    if "OPENROUTER_API_KEY" in st.secrets:
+    st.success("✅ API Key: Configured")
+    else:
+    st.error("❌ API Key: Missing")
     
+    #selected models
     selected_assistant_name = st.selectbox("Select Assistant:", options=list(assistants.keys()))
     
     if selected_assistant_name != st.session_state.current_assistant:
@@ -167,7 +171,7 @@ with st.sidebar:
     current_attempt = st.session_state.model_attempts.get(selected_assistant_name, 1)
     current_model = get_assistant_model(selected_assistant_name, current_attempt)
     
-    # Tampilkan status reliability
+    # status reliability
     if current_attempt <= 3:
         st.success(f"**Model:** {current_model.split('/')[1]}")
         st.caption("✅ Using assistant-specific model")

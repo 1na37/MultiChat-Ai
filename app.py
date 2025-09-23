@@ -3,10 +3,11 @@ import requests
 import json
 from datetime import datetime
 
-# Validate API key before running
-if "OPENROUTER_API_KEY" not in st.secrets:
-    st.error("❌ OpenRouter API key not found. Please add it to your secrets.toml file.")
-    st.stop()
+# API status indicator
+if "OPENROUTER_API_KEY" in st.secrets:
+    st.success("✅ API Key: Configured")
+else:
+    st.error("❌ API Key: Missing")
 
 def clean_response(content):
     """Clean up common markup tokens and formatting"""

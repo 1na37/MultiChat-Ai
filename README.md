@@ -77,8 +77,13 @@ fun_project_2_REAID/
 ```
 
 ## **Application Preview**
+### Main Interface
 ![Multichat](preview.png)
+
+### Chat Processing
 ![Multichat](process.png)
+
+### Error Handling
 ![Multichat](error.png)
 
 ### **Tech Stack & Dependencies**
@@ -217,10 +222,14 @@ fun_project_2_REAID/
 ```
 
 ## **Preview Aplikasi**
+### Main Interface
 ![Multichat](preview.png)
-![Multichat](process.png)
-![Multichat](error.png)
 
+### Chat Processing
+![Multichat](process.png)
+
+### Error Handling
+![Multichat](error.png)
 
 ### **Tech Stack & Dependencies**
 *   **Bahasa**: Python 3.7+

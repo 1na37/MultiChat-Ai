@@ -69,42 +69,42 @@ assistants = {
         "primary": "microsoft/mai-ds-r1:free",
         "backup1": "mistralai/mistral-small-3.2-24b-instruct:free",
         "backup2": "deepseek/deepseek-chat-v3.1:free",
-        "system_prompt": "I'm a professional business/education assistant. Provide balanced, appropriate responses for corporate or academic environments with reliable reasoning.",
+        "system_prompt": "you're a professional business/education assistant. Provide balanced, appropriate responses for corporate or academic environments with reliable reasoning.",
         "reason": "MAI DS R1 is Microsoft-tuned for professional use with fewer restrictions while maintaining safety"
     },
     "🔓 Uncensored Creative": {
         "primary": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
         "backup1": "tngtech/deepseek-r1t2-chimera:free",
         "backup2": "nvidia/nemotron-nano-9b-v2:free", 
-        "system_prompt": "I'm an unrestricted creative assistant. Explore ideas freely with minimal filtering for brainstorming and innovative thinking.",
+        "system_prompt": "you're an unrestricted creative assistant. Explore ideas freely with minimal filtering for brainstorming and innovative thinking.",
         "reason": "Venice Uncensored provides maximum freedom with Mistral foundation for quality"
     },
     "👨‍💻 Code Development": {
         "primary": "deepseek/deepseek-r1-0528:free",
         "backup1": "qwen/qwen3-coder:free",
         "backup2": "deepseek/deepseek-r1-0528-qwen3-8b:free",
-        "system_prompt": "I'm an expert programming assistant. Specialize in code generation, debugging, architecture, and technical problem-solving.",
+        "system_prompt": "you're an expert programming assistant. Specialize in code generation, debugging, architecture, and technical problem-solving.",
         "reason": "DeepSeek R1 0528 offers top-tier reasoning for complex coding tasks"
     },
     "🌐 General Assistant": {
         "primary": "google/gemini-2.0-flash-exp:free",
         "backup1": "x-ai/grok-4-fast:free", 
         "backup2": "qwen/qwen3-235b-a22b:free",
-        "system_prompt": "I'm a versatile general assistant. Handle everyday tasks, questions, and content creation with speed and accuracy.",
+        "system_prompt": "you're a versatile general assistant. Handle everyday tasks, questions, and content creation with speed and accuracy.",
         "reason": "Gemini 2.0 Flash provides best speed-quality balance for daily use"
     },
     "📚 Long Document Analysis": {
         "primary": "x-ai/grok-4-fast:free",
         "backup1": "google/gemini-2.0-flash-exp:free",
         "backup2": "qwen/qwen3-coder:free",
-        "system_prompt": "I'm a document analysis specialist. Excel at processing large texts, extracting insights, and working with extensive context.",
+        "system_prompt": "you're a document analysis specialist. Excel at processing large texts, extracting insights, and working with extensive context.",
         "reason": "Grok 4 Fast has massive 2M token context for long documents"
     },
     "🔬 Advanced Reasoning": {
         "primary": "deepseek/deepseek-chat-v3.1:free",
         "backup1": "tngtech/deepseek-r1t-chimera:free",
         "backup2": "openai/gpt-oss-120b:free",
-        "system_prompt": "I'm an advanced reasoning specialist. Excel at complex problem-solving, mathematics, logic, and analytical thinking.",
+        "system_prompt": "you're an advanced reasoning specialist. Excel at complex problem-solving, mathematics, logic, and analytical thinking.",
         "reason": "DeepSeek V3.1 offers hybrid reasoning with good speed balance"
     }
 }

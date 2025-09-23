@@ -77,17 +77,7 @@ fun_project_2_REAID/
 ```
 
 ## **Application Preview**
-**_Main Chat Interface_** :
-
-![Chat Interface](https://via.placeholder.com/800x400/4F8BF9/FFFFFF?text=Chat+Interface+with+Bubble+Messages)
-
-**_Sidebar Configuration_** :
-
-![Sidebar Settings](https://via.placeholder.com/400x600/2E8B57/FFFFFF?text=Assistant+Selection+and+Settings)
-
-**_Multiple Model Responses_** :
-
-![Model Responses](https://via.placeholder.com/800x400/FF6B6B/FFFFFF?text=Responses+with+Model+Information)
+![Multichat](preview.png)
 
 ### **Tech Stack & Dependencies**
 *   **Language**: Python 3.7+
@@ -225,17 +215,7 @@ fun_project_2_REAID/
 ```
 
 ## **Preview Aplikasi**
-**_Antarmuka Chat Utama_** :
-
-![Antarmuka Chat](https://via.placeholder.com/800x400/4F8BF9/FFFFFF?text=Antarmuka+Chat+dengan+Pesan+Bubble)
-
-**_Konfigurasi Sidebar_** :
-
-![Pengaturan Sidebar](https://via.placeholder.com/400x600/2E8B57/FFFFFF?text=Pilihan+Asisten+dan+Pengaturan)
-
-**_Respons Multiple Model_** :
-
-![Respons Model](https://via.placeholder.com/800x400/FF6B6B/FFFFFF?text=Respons+dengan+Informasi+Model)
+![Multichat](preview.png)
 
 ### **Tech Stack & Dependencies**
 *   **Bahasa**: Python 3.7+

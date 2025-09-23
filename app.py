@@ -1,18 +1,7 @@
 import streamlit as st
 import requests
 import json
-from datetime import datetime, timedelta
-import pytz
-
-# Menggunakan pytz untuk timezone
-utc_zone = pytz.timezone('UTC')
-wib_zone = pytz.timezone('Asia/Jakarta')
-
-utc_time = utc_zone.localize(datetime(2024, 1, 15, 10, 30, 0))
-wib_time = utc_time.astimezone(wib_zone)
-
-print(f"UTC: {utc_time}")
-print(f"WIB: {wib_time}")
+from datetime import datetime
 
 # Validate API key before running
 if "OPENROUTER_API_KEY" not in st.secrets:

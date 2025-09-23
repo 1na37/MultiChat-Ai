@@ -4,7 +4,7 @@ import json
 from datetime import datetime, timedelta
 import pytz
 
-# Cara 2: Menggunakan pytz (lebih akurat)
+# Menggunakan pytz untuk timezone
 utc_zone = pytz.timezone('UTC')
 wib_zone = pytz.timezone('Asia/Jakarta')
 

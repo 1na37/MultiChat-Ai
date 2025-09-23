@@ -12,9 +12,8 @@ def clean_response(content):
     """Clean up common markup tokens and formatting"""
     if content:
         # Remove common AI artifacts and markup
-        content = content.replace('
-', '').replace('**', '').replace('*', '').strip()
         content = content.replace('<s>', '').replace('</s>', '').strip()
+        content = content.replace('**', '').replace('*', '').strip()
         # Remove excessive newlines and clean up formatting
         content = '\n'.join([line.strip() for line in content.split('\n') if line.strip()])
     return content
@@ -154,13 +153,13 @@ if "last_request_time" not in st.session_state:
 with st.sidebar:
     st.header("⚙️ Configuration")
     
-    # API status indicator
+    # API status indicator - FIXED INDENTATION
     if "OPENROUTER_API_KEY" in st.secrets:
-    st.success("✅ API Key: Configured")
+        st.success("✅ API Key: Configured")
     else:
-    st.error("❌ API Key: Missing")
+        st.error("❌ API Key: Missing")
     
-    #selected models
+    # Selected models
     selected_assistant_name = st.selectbox("Select Assistant:", options=list(assistants.keys()))
     
     if selected_assistant_name != st.session_state.current_assistant:
@@ -171,7 +170,7 @@ with st.sidebar:
     current_attempt = st.session_state.model_attempts.get(selected_assistant_name, 1)
     current_model = get_assistant_model(selected_assistant_name, current_attempt)
     
-    # status reliability
+    # Status reliability
     if current_attempt <= 3:
         st.success(f"**Model:** {current_model.split('/')[1]}")
         st.caption("✅ Using assistant-specific model")

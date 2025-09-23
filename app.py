@@ -8,6 +8,23 @@ if "OPENROUTER_API_KEY" not in st.secrets:
     st.error("❌ OpenRouter API key not found. Please add it to your secrets.toml file.")
     st.stop()
 
+from datetime import datetime, timedelta
+import pytz
+
+# Cara 1: Simple addition
+utc_time = datetime(2024, 1, 15, 10, 30, 0)  # UTC time
+wib_time = utc_time + timedelta(hours=7)
+
+# Cara 2: Menggunakan pytz (lebih akurat)
+utc_zone = pytz.timezone('UTC')
+wib_zone = pytz.timezone('Asia/Jakarta')
+
+utc_time = utc_zone.localize(datetime(2024, 1, 15, 10, 30, 0))
+wib_time = utc_time.astimezone(wib_zone)
+
+print(f"UTC: {utc_time}")
+print(f"WIB: {wib_time}")
+
 def clean_response(content):
     """Clean up common markup tokens and formatting"""
     if content:

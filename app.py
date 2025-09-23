@@ -4,10 +4,6 @@ import json
 from datetime import datetime, timedelta
 import pytz
 
-# Cara 1: Simple addition
-utc_time = datetime(2024, 1, 15, 10, 30, 0)  # UTC time
-wib_time = utc_time + timedelta(hours=7)
-
 # Cara 2: Menggunakan pytz (lebih akurat)
 utc_zone = pytz.timezone('UTC')
 wib_zone = pytz.timezone('Asia/Jakarta')

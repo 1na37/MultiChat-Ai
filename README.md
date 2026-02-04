@@ -1,4 +1,4 @@
-# README.md - Multi-Assistant AI Chatbot
+# README.md - Multi-Assistant AI Chatbot for fun project 2 AI Python
 
 ## English Version
 

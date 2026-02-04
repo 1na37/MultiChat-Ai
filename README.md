@@ -1,4 +1,4 @@
-*Fun project 2 AI Python*
+*Fun project 2 for AI Python Bootcamp*
 # README.md - Multi-Assistant AI Chatbot 
 
 ## English Version

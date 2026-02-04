@@ -1,4 +1,4 @@
-*for fun project 2 AI Python*
+*Fun project 2 AI Python*
 # README.md - Multi-Assistant AI Chatbot 
 
 ## English Version
